@@ -9,10 +9,10 @@ int main (){
   //   i++;
   // }
 
-  int i;
-  for (int i = 0; i <= 1000 ; i++){
-    printf("%d\n", i);
-    i = i + 9;
+  int luckyNumbers [] = {1,2,3,4,5,6,6,7,8,9};
+  int i = 0;
+  for (int i = 0; i <= 10 ; i++){
+    printf("%d\n", luckyNumbers[i]);
   }
 
   return 0;
