@@ -10,10 +10,14 @@ r -  read the file
 */
 
 int main (){
-  FILE *fpointer = fopen("/home/ghost/Projects/C_Programming/employee.txt", "w"); // create a file in write mode in the filepath
+   FILE *fpointer = fopen("/home/ghost/Projects/C_Programming/employee.txt", "w"); // create a file in write mode in the filepath
+  //FILE *fpointer = fopen("/home/ghost/Projects/C_Programming/employee.txt", "a"); //append info to a file
 
-  // fprintf - function to put info in the file created 
-  fprintf (fpointer, "Jim - Developer\n Ghost - Engineer\n Branson - DevOps");
+      // fprintf - function to put info in the file created
+      fprintf (fpointer, "Allan  - Developer\n Ghost - Engineer\n Branson - DevOps");
+      // fprintf(fpointer, "over-write");
+
+      fprintf(fpointer, "\n Albus - Wizard");
 
   fclose(fpointer);
   printf("File written successfully");
